@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Medium Paywall Bypass - Options</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      padding: 15px;
+      width: 280px; /* narrowed for popup */
+      color: #333;
+      margin: 0;
+    }
+    h2 {
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+    .setting-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+    input[type="text"], select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+    .help-text {
+      font-size: 12px;
+      color: #666;
+      margin-top: 4px;
+    }
+    button {
+      background-color: #1a8917; /* Medium green */
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #156d12;
+    }
+    #status {
+      margin-top: 15px;
+      color: #1a8917;
+      font-size: 13px;
+      font-weight: bold;
+      text-align: center;
+      min-height: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Extension Settings</h2>
+
+  <div class="setting-group">
+    <label for="mirrorUrl">Bypass Service URL</label>
+    <input type="text" id="mirrorUrl" placeholder="https://freedium-mirror.cfd/">
+    <div class="help-text">Include the trailing slash.</div>
+  </div>
+
+  <div class="setting-group">
+    <label for="buttonPosition">Button Position</label>
+    <select id="buttonPosition">
+      <option value="bottom_center">Bottom Center</option>
+      <option value="bottom_right">Bottom Right</option>
+      <option value="bottom_left">Bottom Left</option>
+      <option value="top_right">Top Right</option>
+      <option value="top_left">Top Left</option>
+    </select>
+    <div class="help-text">Where should the "Open in Freedium" button appear?</div>
+  </div>
+
+  <div class="setting-group">
+    <label for="openBehavior">Open Behavior</label>
+    <select id="openBehavior">
+      <option value="current_tab">Current Tab (Replace)</option>
+      <option value="new_tab">New Tab</option>
+      <option value="side_panel">Split View (Side Panel)</option>
+    </select>
+    <div class="help-text">Where should the bypassed article open?</div>
+  </div>
+
+  <button id="saveBtn">Save Settings</button>
+  <div id="status"></div>
+
+  <script src="options.js"></script>
+</body>
+</html>
