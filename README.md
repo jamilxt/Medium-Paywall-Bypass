@@ -50,3 +50,16 @@ It only takes a minute!
 Click the "M" icon in your browser toolbar to open the settings menu. From here, you can change where the floating button appears, or choose to open articles in Split View instead!
 
 ![Screenshot 2](screenshot-2.png)
+
+## ⚠️ Disclaimer
+
+This extension is intended **strictly for educational and personal use only**.
+
+- This project does **not** host, reproduce, distribute, or store any content from Medium or any other platform.
+- It works by redirecting the user's browser to a **publicly available third-party mirror service** — it does not scrape, clone, or modify any copyrighted content itself.
+- The author of this extension is **not affiliated with, endorsed by, or in any way connected to Medium, Towards Data Science, or any of their parent companies**.
+- Using this tool may be a violation of [Medium's Terms of Service](https://policy.medium.com/medium-terms-of-service-9db0094a1e0f). **Use at your own risk and discretion.**
+- If you find value in an author's work, please consider **supporting them directly** by subscribing to Medium or clapping for their articles.
+- This repository is provided **as-is**, with no warranties. The author assumes **no liability** for any misuse or consequences arising from its use.
+
+> **TL;DR**: This tool simply redirects your browser. It does not steal, copy, or republish anyone's content. Please respect content creators and use responsibly.
