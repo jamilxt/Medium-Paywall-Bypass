@@ -1,6 +1,6 @@
 # Medium Paywall Bypass (Chrome Extension)
 
-A lightweight Google Chrome extension that helps you seamlessly read premium, "Member-only" articles on Medium and Towards Data Science by automatically redirecting them to a fast mirror service.
+A lightweight Google Chrome extension that helps you seamlessly read premium, "Member-only" articles on Medium by automatically redirecting them to a fast mirror service.
 
 ![Screenshot 1](screenshot-1.png)
 
