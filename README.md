@@ -5,7 +5,7 @@ A lightweight Google Chrome extension that helps you seamlessly read premium, "M
 ## Features
 
 - **Automatic Detection**: Intelligently detects when an article is behind a paywall (even dynamically as you navigate).
-- **Floating Action Button**: Adds a green "Open in Freedium" hovering button exclusively to premium articles.
+- **Floating Action Button**: Adds a green "Read Full Article" hovering button exclusively to premium articles.
 - **Customizable Open Behaviors**:
   - **Current Tab**: Replace the active page with the full article.
   - **New Tab**: Open the full article in the background.
@@ -41,7 +41,7 @@ It only takes a minute!
 
 1. Navigate to any `medium.com` article. 
 2. If it is a free article, read as normal! The extension stays hidden.
-3. If it is a premium article (marked with a star), a green "Open in Freedium" button will appear at the bottom of your screen. Click it!
+3. If it is a premium article (marked with a star), a green "Read Full Article" button will appear at the bottom of your screen. Click it!
 
 ### Changing Settings
 Click the "M" icon in your browser toolbar to open the settings menu. From here, you can change where the floating button appears, or choose to open articles in Split View instead!

@@ -1,4 +1,4 @@
-(function() {
+(function () {
   // Prevent adding multiple buttons if script runs twice
   if (document.getElementById('freedium-bypass-btn')) return;
 
@@ -6,8 +6,8 @@
   const btn = document.createElement('button');
   btn.id = 'freedium-bypass-btn';
   btn.className = 'freedium-floating-btn';
-  btn.innerText = 'Open in Freedium';
-  
+  btn.innerText = 'Read Full Article';
+
   // Attach click listener
   btn.addEventListener('click', () => {
     // Default settings fallback
@@ -19,24 +19,24 @@
       (items) => {
         let mirrorUrl = items.bypassMirrorUrl;
         if (!mirrorUrl.endsWith('/')) {
-            mirrorUrl += '/';
+          mirrorUrl += '/';
         }
 
         const bypassedUrl = mirrorUrl + window.location.href;
 
         if (items.openBehavior === "new_tab") {
-            window.open(bypassedUrl, '_blank');
+          window.open(bypassedUrl, '_blank');
         } else if (items.openBehavior === "side_panel") {
-            chrome.runtime.sendMessage({ action: "open_side_panel", url: bypassedUrl });
+          chrome.runtime.sendMessage({ action: "open_side_panel", url: bypassedUrl });
         } else {
-            // "current_tab"
-            window.location.href = bypassedUrl;
+          // "current_tab"
+          window.location.href = bypassedUrl;
         }
       }
     );
   });
 
-// Apply position based on settings before appending
+  // Apply position based on settings before appending
   chrome.storage.sync.get({ buttonPosition: "bottom_center" }, (items) => {
     btn.classList.add(`pos-${items.buttonPosition.replace('_', '-')}`);
     document.body.appendChild(btn);
@@ -75,7 +75,7 @@
     observer.observe(document.body, { childList: true, subtree: true });
 
     // Handle SPA navigation (user clicks a link to another article without full reload)
-    let lastUrl = location.href; 
+    let lastUrl = location.href;
     new MutationObserver(() => {
       const url = location.href;
       if (url !== lastUrl) {
@@ -84,7 +84,7 @@
         observer.observe(document.body, { childList: true, subtree: true }); // Restart search
         checkAndShowButton(); // Quick check
       }
-    }).observe(document, {subtree: true, childList: true});
+    }).observe(document, { subtree: true, childList: true });
   }
 
 })();
