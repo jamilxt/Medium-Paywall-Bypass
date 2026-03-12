@@ -2,6 +2,8 @@
 
 A lightweight Google Chrome extension that helps you seamlessly read premium, "Member-only" articles on Medium and Towards Data Science by automatically redirecting them to a fast mirror service.
 
+![Screenshot 1](screenshot-1.png)
+
 ## Features
 
 - **Automatic Detection**: Intelligently detects when an article is behind a paywall (even dynamically as you navigate).
@@ -12,6 +14,7 @@ A lightweight Google Chrome extension that helps you seamlessly read premium, "M
   - **Split View (Side Panel)**: Slide out Chrome's native side panel to read the full article alongside the original page!
 - **Adjustable Positioning**: Move the floating button to any corner of the screen via the extension's options menu.
 - **Privacy First**: No tracking, no analytics. It perfectly delegates reading to the mirror service.
+
 
 ## How to Install (Developer Mode)
 
@@ -45,3 +48,5 @@ It only takes a minute!
 
 ### Changing Settings
 Click the "M" icon in your browser toolbar to open the settings menu. From here, you can change where the floating button appears, or choose to open articles in Split View instead!
+
+![Screenshot 2](screenshot-2.png)
